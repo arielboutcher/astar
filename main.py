@@ -1,16 +1,8 @@
-"""Author: Sean McKiernan (Mekire)
-Purpose: Exploring A* pathfinding.
-License: Free for everyone and anything (no warranty expressed or implied)
-Module: main.py
-Overview: Primary driver for entire program.
-Classes:
-    Control(object):
-        Methods:
-            __init__(self)
-            event_loop(self)
-            game_loop(self)
-Functions:
-    main()"""
+"""	Purpose: Pathfinding using the A* algorithm
+	Visualization dependency: Pygame 1.9.6-3
+	
+	
+"""
 import sys,os
 import pygame as pg
 import interface
@@ -39,7 +31,7 @@ class Control(object):
             self.Clock.tick_busy_loop(self.fps)
             pg.display.flip()
 
-###
+#for rendering the game
 def main():
     """Initialize the display and create an instance of Control."""
     os.environ['SDL_VIDEO_CENTERED'] = '1'
